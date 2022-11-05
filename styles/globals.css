@@ -15,6 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+.logo {
+  min-width: 6rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
