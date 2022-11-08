@@ -15,7 +15,7 @@ export default class DonutChart extends Component {
           options={this.state.options}
           series={this.state.series}
           type="donut"
-          width="380"
+          height="310px"
         />
       </div>
     );

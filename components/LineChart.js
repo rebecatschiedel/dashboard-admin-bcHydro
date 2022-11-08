@@ -28,6 +28,7 @@ export default class LineChart extends Component {
               options={this.state.options}
               series={this.state.series}
               type="line"
+              width="100%"
             />
           </div>
         </div>

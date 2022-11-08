@@ -6,7 +6,7 @@ function dashboardPage() {
   return (
     <Layout>
       <Header breadcrumbs={["Pages", "Dashboard"]}>
-        <Dashboard />;
+        <Dashboard />
       </Header>
     </Layout>
   );
