@@ -17,10 +17,11 @@ function Stats() {
         px="1rem"
         w={["100%", "30%"]}
         textAlign={["center", "start"]}
+        py="1rem"
       >
         <Stat>
-          <StatLabel>Total Cost</StatLabel>
-          <StatNumber>15.08M</StatNumber>
+          <StatLabel>Eletricity Generated</StatLabel>
+          <StatNumber>6.262.316 MWh</StatNumber>
           <StatHelpText>
             <StatArrow type="increase" />
             23.36%
@@ -33,10 +34,11 @@ function Stats() {
         px="1rem"
         w={["100%", "30%"]}
         textAlign={["center", "start"]}
+        py="1rem"
       >
         <Stat>
-          <StatLabel>Consumption</StatLabel>
-          <StatNumber>267</StatNumber>
+          <StatLabel>Non-emitting sources</StatLabel>
+          <StatNumber>93%</StatNumber>
           <StatHelpText>
             <StatArrow type="decrease" />
             9.05%
@@ -49,10 +51,11 @@ function Stats() {
         px="1rem"
         w={["100%", "30%"]}
         textAlign={["center", "start"]}
+        py="1rem"
       >
         <Stat>
-          <StatLabel>Production</StatLabel>
-          <StatNumber>345,670</StatNumber>
+          <StatLabel>Domestic use</StatLabel>
+          <StatNumber>514.020 m³</StatNumber>
           <StatHelpText>
             <StatArrow type="increase" />
             16.84%

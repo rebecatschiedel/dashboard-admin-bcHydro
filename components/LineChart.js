@@ -8,13 +8,13 @@ export default class LineChart extends Component {
         id: "basic-bar",
       },
       xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        categories: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
       },
     },
     series: [
       {
-        name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91],
+        name: "Thousands of dollars",
+        data: [0, 2.5, 1, 2, 1, 2, 2.5, 2.2],
       },
     ],
   };

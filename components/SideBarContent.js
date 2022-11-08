@@ -31,8 +31,8 @@ function SideBarContent({ isOpen }) {
         <SideBarItem
           isOpen={isOpen}
           icon={FiCalendar}
-          title="Calendar"
-          href="/calendar"
+          title="BC cities"
+          href="/bcCities"
         />
         <SideBarItem
           isOpen={isOpen}
@@ -40,18 +40,12 @@ function SideBarContent({ isOpen }) {
           title="User Maintenance"
           href="/userMaintenance"
         />
-        <SideBarItem
-          isOpen={isOpen}
-          icon={IoPawOutline}
-          title="Animals"
-          href="/dashboard"
-        />
-        <SideBarItem
+        {/* <SideBarItem
           isOpen={isOpen}
           icon={FiDollarSign}
           title="Stocks"
           href="/dashboard"
-        />
+        /> */}
         <SideBarItem
           isOpen={isOpen}
           icon={FiBriefcase}
