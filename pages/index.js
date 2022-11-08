@@ -32,11 +32,10 @@ const Login = () => {
   return (
     <Flex
       flexDirection="column"
-      width="100wh"
-      height="100vh"
       backgroundColor="bcPrimary.ice"
       justifyContent="center"
       alignItems="center"
+      mt={["2rem", "5rem"]}
     >
       <Stack
         flexDir="column"
