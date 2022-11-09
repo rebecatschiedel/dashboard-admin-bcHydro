@@ -15,6 +15,7 @@ export default function Sidebar() {
     <Flex
       left="5"
       minH={["7rem", "700px"]}
+      maxH="100vh"
       margin={["0 auto", "0"]}
       boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
       w={["100%", "60px", "200px"]}

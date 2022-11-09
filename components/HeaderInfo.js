@@ -43,7 +43,7 @@ function HeaderInfo() {
                   <Avatar size="sm" src="" />
                   <Flex flexDir="column" ml={4}>
                     <Heading as="h3" fontWeight="semibold" size="sm">
-                      Muammer Necipoglu
+                      Sofia Argos
                     </Heading>
                     <Text>About the subject we were...</Text>
                   </Flex>
@@ -55,7 +55,7 @@ function HeaderInfo() {
                   <Avatar size="sm" src="" />
                   <Flex flexDir="column" ml={4}>
                     <Heading as="h3" size="sm">
-                      Rebeca Guedes
+                      Arthur Copolla
                     </Heading>
                     <Text>Hi Baran, let me know when...</Text>
                   </Flex>

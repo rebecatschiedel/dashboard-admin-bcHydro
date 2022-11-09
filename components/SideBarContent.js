@@ -15,7 +15,7 @@ import {
   FiBriefcase,
   FiSettings,
 } from "react-icons/fi";
-import { IoPawOutline } from "react-icons/io5";
+import { IoMapOutline } from "react-icons/io5";
 import SideBarItem from "./SideBarItem";
 
 function SideBarContent({ isOpen }) {
@@ -40,17 +40,17 @@ function SideBarContent({ isOpen }) {
           title="User Maintenance"
           href="/userMaintenance"
         />
-        {/* <SideBarItem
-          isOpen={isOpen}
-          icon={FiDollarSign}
-          title="Stocks"
-          href="/dashboard"
-        /> */}
         <SideBarItem
           isOpen={isOpen}
           icon={FiBriefcase}
           title="Reports"
           href="/reports"
+        />
+        <SideBarItem
+          isOpen={isOpen}
+          icon={IoMapOutline}
+          title="BC Map"
+          href="/bcMap"
         />
         {/* <SideBarItem
           isOpen={isOpen}
