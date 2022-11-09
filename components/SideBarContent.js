@@ -50,14 +50,14 @@ function SideBarContent({ isOpen }) {
           isOpen={isOpen}
           icon={FiBriefcase}
           title="Reports"
-          href="/dashboard"
+          href="/reports"
         />
-        <SideBarItem
+        {/* <SideBarItem
           isOpen={isOpen}
           icon={FiSettings}
           title="Settings"
           href="/dashboard"
-        />
+        /> */}
       </VStack>
 
       <Flex flexDir="column" mb={4}>

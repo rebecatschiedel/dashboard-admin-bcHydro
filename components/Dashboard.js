@@ -3,9 +3,6 @@ import { Box, Flex } from "@chakra-ui/react";
 import Stats from "../components/Stats";
 import MiniCalendar from "./MiniCalendar";
 
-const BarChart = dynamic(() => import("../components/BarChart"), {
-  ssr: false,
-});
 const LineChart = dynamic(() => import("../components/LineChart"), {
   ssr: false,
 });

@@ -8,13 +8,26 @@ export default class BarChart extends Component {
         id: "basic-bar",
       },
       xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        categories: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
       },
     },
     series: [
       {
         name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91],
+        data: [30, 25, 40, 42, 50, 43, 37, 46, 53, 48, 44, 42],
       },
     ],
   };
@@ -28,7 +41,7 @@ export default class BarChart extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="500"
+              width="400"
             />
           </div>
         </div>
