@@ -1,13 +1,10 @@
-## [Live Project](https://utilities-admin-page.netlify.app/)
+## Project
 
-
-
-
-## Getting Started
+This project was deployed on Netlify. Check the live version [here](https://utilities-admin-page.netlify.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+To run it locally, first, run the development server:
 
 ```bash
 npm run dev
@@ -17,23 +14,18 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## The process
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The project goal was to create an Admin panel to an utility company, using Next.js, [Chakra UI](https://chakra-ui.com/), and [React-ApexChart](https://apexcharts.com/).
+I started by searching for design inspirations such as [Horizon Ui](https://horizon-ui.com/) and [Coded Themes](https://codedthemes.com/demos/admin-templates/datta-able/react/default/app/dashboard/default). 
+I used BC Hydro as the Utility Company, and followed the design system available at [BC Hydro](https://standards.bchydro.com/). 
+I gathered the data from [Statistics Canada](https://www150.statcan.gc.ca/n1/pub/71-607-x/71-607-x2019001-eng.htm), [EPE - Brazil](https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica), [BC Hydro](https://www.bchydro.com/index.html), and [Ontario Energy Board](https://www.oeb.ca/ontarios-energy-sector/ontario-electricity-and-natural-gas-utilities-service-area-map), to apply to the project.
+I also used the [react-calendar](https://www.npmjs.com/package/react-calendar) package to create an interactive calendar.
 
-## Learn More
+To add a map, I decided to use [Leaflet](https://leafletjs.com/), and added the [React Leaflet](https://react-leaflet.js.org/docs/start-introduction/) to make it compatible with Next.js.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Next Steps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Update the charts to more interactive ones, like [Infragistics](https://www.infragistics.com/).
