@@ -1,37 +1,67 @@
 import React, { Component } from "react";
-import Chart from "react-apexcharts";
+import ReactApexChart from "react-apexcharts";
 
 export default class LineChart extends Component {
-  state = {
-    options: {
-      chart: {
-        id: "basic-bar",
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      series: [
+        {
+          name: "Production",
+          data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+        },
+      ],
+      options: {
+        chart: {
+          height: 350,
+          type: "line",
+          zoom: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "straight",
+        },
+        title: {
+          text: "Non-emmiting sources",
+          align: "left",
+        },
+        grid: {
+          row: {
+            colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+            opacity: 0.5,
+          },
+        },
+        xaxis: {
+          categories: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+          ],
+        },
       },
-      xaxis: {
-        categories: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
-      },
-    },
-    series: [
-      {
-        name: "Thousands of dollars",
-        data: [0, 2.5, 1, 2, 1, 2, 2.5, 2.2],
-      },
-    ],
-  };
+    };
+  }
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="line"
-              width="100%"
-            />
-          </div>
-        </div>
+      <div id="chart">
+        <ReactApexChart
+          options={this.state.options}
+          series={this.state.series}
+          type="line"
+          height={350}
+        />
       </div>
     );
   }

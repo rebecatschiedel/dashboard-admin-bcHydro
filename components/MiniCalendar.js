@@ -11,7 +11,6 @@ function MiniCalendar() {
       bg="bcPrimary.ice"
       shadow="base"
       borderRadius="5px"
-      w={["90%", "auto"]}
       p={["1rem 0", "1.25rem"]}
     >
       <Calendar onChange={onChange} value={value} />

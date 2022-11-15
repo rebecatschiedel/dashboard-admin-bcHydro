@@ -1,3 +1,11 @@
+export const progressData = [
+  { name: "Promotions", progress: "83.6%", dueDate: "Nov 31, 2022" },
+  { name: "Yearly Review", progress: "48%", dueDate: "Dec 31, 2022" },
+  { name: "Peer Review", progress: "64.8%", dueDate: "Dec 31, 2022" },
+  { name: "Hiring", progress: "12.8%", dueDate: "Jan 2, 2023" },
+  { name: "Expansion", progress: "75.2%", dueDate: "Jan 12, 2023" },
+];
+
 export const outages = {
   current: [
     { region: "Central Interior", outages: 0, customersAffected: 0 },

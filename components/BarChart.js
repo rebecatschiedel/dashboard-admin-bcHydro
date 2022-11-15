@@ -35,16 +35,29 @@ export default class BarChart extends Component {
   render() {
     return (
       <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="bar"
-              width="400"
-            />
+        {this.props.size == "sm" ? (
+          <div className="row">
+            <div className="mixed-chart">
+              <Chart
+                options={this.state.options}
+                series={this.state.series}
+                type="bar"
+                width="400"
+              />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="row">
+            <div className="mixed-chart">
+              <Chart
+                options={this.state.options}
+                series={this.state.series}
+                type="bar"
+                width="600"
+              />
+            </div>
+          </div>
+        )}
       </div>
     );
   }
