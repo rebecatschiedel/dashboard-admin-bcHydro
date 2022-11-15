@@ -1,3 +1,41 @@
+export const outages = {
+  current: [
+    { region: "Central Interior", outages: 0, customersAffected: 0 },
+    { region: "Lower Mainland", outages: 1, customersAffected: 5 },
+    { region: "Northern", outages: 0, customersAffected: 0 },
+    { region: "Okanagan / Kootenay", outages: 0, customersAffected: 0 },
+    { region: "Thompson / Shuswap", outages: 0, customersAffected: 0 },
+    { region: "Vancouver Island, North", outages: 0, customersAffected: 0 },
+    { region: "Vancouver Island, South", outages: 0, customersAffected: 0 },
+  ],
+  restored: [
+    { region: "Central Interior", outages: 106, customersAffected: 7064 },
+    { region: "Lower Mainland", outages: 1726, customersAffected: 432968 },
+    { region: "Northern", outages: 229, customersAffected: 29815 },
+    { region: "Okanagan / Kootenay", outages: 137, customersAffected: 16223 },
+    { region: "Thompson / Shuswap", outages: 167, customersAffected: 43881 },
+    {
+      region: "Vancouver Island, North",
+      outages: 354,
+      customersAffected: 69789,
+    },
+    {
+      region: "Vancouver Island, South",
+      outages: 444,
+      customersAffected: 119754,
+    },
+  ],
+  planned: [
+    { region: "Central Interior", outages: 5, customersAffected: 23 },
+    { region: "Lower Mainland", outages: 166, customersAffected: 9542 },
+    { region: "Northern", outages: 16, customersAffected: 1748 },
+    { region: "Okanagan / Kootenay", outages: 14, customersAffected: 2931 },
+    { region: "Thompson / Shuswap", outages: 19, customersAffected: 6396 },
+    { region: "Vancouver Island, North", outages: 48, customersAffected: 1588 },
+    { region: "Vancouver Island, South", outages: 99, customersAffected: 3635 },
+  ],
+};
+
 export const cities = [
   {
     name: "Abbotsford",

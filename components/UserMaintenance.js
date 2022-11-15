@@ -1,18 +1,12 @@
 import {
   Flex,
-  HStack,
-  InputGroup,
-  InputLeftElement,
-  Input,
   Table,
   Thead,
   Tbody,
   Tr,
   Th,
   TableContainer,
-  Box,
 } from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
 import { users } from "../config";
 import User from "./User";
 
