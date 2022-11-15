@@ -43,9 +43,9 @@ function Dashboard() {
         />
       </StatGroup>
 
-      <Box marginTop="3rem">
+      <Box marginTop="3rem" shadow="md" p="1rem">
         <Heading
-          my="1rem"
+          mb="1rem"
           fontSize={["2xl", "3xl"]}
           color="bcPrimary.sea"
           fontWeight="medium"
@@ -55,9 +55,9 @@ function Dashboard() {
         <DoubleColumnChart />
       </Box>
       <Flex w="100%" mt="1rem" flexDir={["column", "column", "row"]} gap="3rem">
-        <Box w="100%">
+        <Box w="100%" shadow="md" p="1rem">
           <Heading
-            my="1rem"
+            mb="1rem"
             fontSize={["2xl", "3xl"]}
             color="bcPrimary.sea"
             fontWeight="medium"
@@ -66,9 +66,8 @@ function Dashboard() {
           </Heading>
           <LineChart />
         </Box>
-        <Box w="100%">
+        <Box w="100%" shadow="md" p="1rem">
           <Heading
-            mt="1rem"
             mb={["1rem", "3rem", "5rem"]}
             fontSize={["2xl", "3xl"]}
             color="bcPrimary.sea"
@@ -81,9 +80,9 @@ function Dashboard() {
       </Flex>
       <Flex w="100%" mt="1rem" flexDir={["column", "column", "row"]} gap="3rem">
         <Show above="md">
-          <Box>
+          <Box shadow="md" p="1rem">
             <Heading
-              my="1rem"
+              mb="1rem"
               fontSize={["2xl", "3xl"]}
               color="bcPrimary.sea"
               fontWeight="medium"
@@ -94,9 +93,9 @@ function Dashboard() {
           </Box>
         </Show>
         <Hide above="md">
-          <Box>
+          <Box shadow="md" p="1rem">
             <Heading
-              my="1rem"
+              mb="1rem"
               fontSize={["2xl", "3xl"]}
               color="bcPrimary.sea"
               fontWeight="medium"
