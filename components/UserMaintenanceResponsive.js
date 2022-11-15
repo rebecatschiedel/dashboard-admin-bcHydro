@@ -1,15 +1,5 @@
-import {
-  Flex,
-  Text,
-  HStack,
-  Heading,
-  Avatar,
-  Stack,
-  IconButton,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Text, Heading, Avatar, Link } from "@chakra-ui/react";
 import { users } from "../config";
-import { EmailIcon } from "@chakra-ui/icons";
 
 function UserMaintenanceResponsive() {
   return (
@@ -43,14 +33,7 @@ function UserMaintenanceResponsive() {
               <Flex flexDir="column">
                 <Text>{user.permissionLevel}</Text>
                 <Flex alignItems="center">
-                  <Text>{user.messages.length && user.messages.length}</Text>
-                  <IconButton
-                    variant="Ghost"
-                    color="bcPrimary.sea"
-                    aria-label="Messages"
-                    fontSize="2xl"
-                    icon={<EmailIcon />}
-                  />
+                  <Link color="bcPrimary.sea">Edit User</Link>
                 </Flex>
               </Flex>
             </Flex>

@@ -7,20 +7,13 @@ import {
   VStack,
   Hide,
 } from "@chakra-ui/react";
-import {
-  FiHome,
-  FiCalendar,
-  FiUser,
-  FiDollarSign,
-  FiBriefcase,
-  FiSettings,
-} from "react-icons/fi";
+import { FiHome, FiCalendar, FiUser, FiBriefcase } from "react-icons/fi";
 import { IoMapOutline } from "react-icons/io5";
 import SideBarItem from "./SideBarItem";
 
 function SideBarContent({ isOpen }) {
   return (
-    <Flex flexDir="column" justifyContent="space-between" h="100%">
+    <Flex flexDir="column" gap="3rem" h="100%">
       <VStack spacing="0.8rem" w="100%">
         <SideBarItem
           isOpen={isOpen}
@@ -52,12 +45,6 @@ function SideBarContent({ isOpen }) {
           title="BC Map"
           href="/bcMap"
         />
-        {/* <SideBarItem
-          isOpen={isOpen}
-          icon={FiSettings}
-          title="Settings"
-          href="/dashboard"
-        /> */}
       </VStack>
 
       <Flex flexDir="column" mb={4}>

@@ -19,39 +19,41 @@ function bcCities() {
   return (
     <Layout>
       <Header breadcrumbs={["Pages", "BC Cities"]}>
-        <TableContainer shadow="base" pt="1.7rem">
-          <Table variant="simple">
-            <Show above="md">
-              <Thead bg="bcPrimary.sea">
-                <Tr>
-                  <Th color="bcPrimary.ice">Name</Th>
-                  <Th color="bcPrimary.ice">Population</Th>
-                  <Th color="bcPrimary.ice">Monthly Average Use</Th>
-                </Tr>
-              </Thead>
-            </Show>
-            <Hide above="md">
-              <Thead bg="bcPrimary.sea">
-                <Tr>
-                  <Th color="bcPrimary.ice" pl="0.5rem">
-                    Name
-                  </Th>
-                  <Th color="bcPrimary.ice" pl="0.5rem">
-                    Pop.
-                  </Th>
-                  <Th color="bcPrimary.ice" pl="0.5rem">
-                    M.A.U.
-                  </Th>
-                </Tr>
-              </Thead>
-            </Hide>
-            <Tbody>
-              {cities.map((city, i) => {
-                return <City key={i + 1} city={city} />;
-              })}
-            </Tbody>
-          </Table>
-        </TableContainer>
+        <Box pt="1.7rem">
+          <TableContainer shadow="base" maxH="450px" overflowY="auto">
+            <Table variant="simple">
+              <Show above="md">
+                <Thead bg="bcPrimary.sea">
+                  <Tr>
+                    <Th color="bcPrimary.ice">Name</Th>
+                    <Th color="bcPrimary.ice">Population</Th>
+                    <Th color="bcPrimary.ice">Monthly Average Use</Th>
+                  </Tr>
+                </Thead>
+              </Show>
+              <Hide above="md">
+                <Thead bg="bcPrimary.sea">
+                  <Tr>
+                    <Th color="bcPrimary.ice" pl="0.5rem">
+                      Name
+                    </Th>
+                    <Th color="bcPrimary.ice" pl="0.5rem">
+                      Pop.
+                    </Th>
+                    <Th color="bcPrimary.ice" pl="0.5rem">
+                      M.A.U.
+                    </Th>
+                  </Tr>
+                </Thead>
+              </Hide>
+              <Tbody>
+                {cities.map((city, i) => {
+                  return <City key={i + 1} city={city} />;
+                })}
+              </Tbody>
+            </Table>
+          </TableContainer>
+        </Box>
       </Header>
     </Layout>
   );

@@ -318,7 +318,7 @@ export const users = [
     name: "Adam Smith",
     sector: "Administration",
     position: "Chief of operations",
-    permissionLevel: 3,
+    permissionLevel: "Administrator",
     messages: [
       {
         date: "05/4/2022",
@@ -334,7 +334,7 @@ export const users = [
     name: "Samuel Costa",
     sector: "Human Resource",
     position: "Intern",
-    permissionLevel: 1,
+    permissionLevel: "Member",
     messages: [
       {
         date: "05/4/2022",
@@ -358,7 +358,7 @@ export const users = [
     name: "Sabrina Aldin",
     sector: "Design Team",
     position: "Senior Designer",
-    permissionLevel: 2,
+    permissionLevel: "Creator",
     messages: [
       {
         date: "05/4/2022",
@@ -370,7 +370,7 @@ export const users = [
     name: "Adam Smith",
     sector: "Administration",
     position: "Chief of operations",
-    permissionLevel: 3,
+    permissionLevel: "Administrator",
     messages: [
       {
         date: "05/4/2022",
@@ -386,7 +386,7 @@ export const users = [
     name: "Samuel Costa",
     sector: "Human Resource",
     position: "Intern",
-    permissionLevel: 1,
+    permissionLevel: "Member",
     messages: [
       {
         date: "05/4/2022",
@@ -410,11 +410,35 @@ export const users = [
     name: "Sabrina Aldin",
     sector: "Design Team",
     position: "Senior Designer",
-    permissionLevel: 2,
+    permissionLevel: "Creator",
     messages: [
       {
         date: "05/4/2022",
         content: "message 1",
+      },
+    ],
+  },
+  {
+    name: "Samuel Costa",
+    sector: "Human Resource",
+    position: "Intern",
+    permissionLevel: "Member",
+    messages: [
+      {
+        date: "05/4/2022",
+        content: "message 1",
+      },
+      {
+        date: "25/8/2022",
+        content: "message 2",
+      },
+      {
+        date: "05/4/2022",
+        content: "message 1",
+      },
+      {
+        date: "25/8/2022",
+        content: "message 2",
       },
     ],
   },

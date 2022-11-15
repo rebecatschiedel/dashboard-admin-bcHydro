@@ -10,6 +10,7 @@ import {
   Tr,
   Th,
   TableContainer,
+  Box,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { users } from "../config";
@@ -18,17 +19,17 @@ import User from "./User";
 function UserMaintenance() {
   return (
     <Flex flexDir="column" gap="3rem" pt="1.7rem">
-      <TableContainer>
+      <TableContainer maxH="450px" overflowY="auto">
         <Table variant="simple">
-          <Thead>
+          <Thead bg="bcPrimary.sea">
             <Tr>
-              <Th>Icon</Th>
-              <Th>Id</Th>
-              <Th>Name</Th>
-              <Th>Sector</Th>
-              <Th>Position</Th>
-              <Th>Permission</Th>
-              <Th>Messages</Th>
+              <Th color="bcPrimary.ice">Icon</Th>
+              <Th color="bcPrimary.ice">Id</Th>
+              <Th color="bcPrimary.ice">Name</Th>
+              <Th color="bcPrimary.ice">Sector</Th>
+              <Th color="bcPrimary.ice">Position</Th>
+              <Th color="bcPrimary.ice">Permission</Th>
+              <Th color="bcPrimary.ice">Messages</Th>
             </Tr>
           </Thead>
           <Tbody>
