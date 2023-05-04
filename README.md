@@ -1,3 +1,5 @@
+[Live version](https://utilities-admin-page.netlify.app/)
+
 ## Project
 
 This project was deployed on Netlify. Check the live version [here](https://utilities-admin-page.netlify.app/)
